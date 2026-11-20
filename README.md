@@ -4,8 +4,10 @@ Repositorio nuevo creado a partir del esqueleto de `eclipse_de_luna_cpp` para
 desarrollar el dashboard web del proyecto, sin modificar el repositorio original.
 Licencia MIT (ver `LICENSE`).
 
-> Nota: el pipeline C++17 descrito a continuación se conserva como base y punto
-> de partida; el dashboard es trabajo pendiente de este repositorio.
+> Nota: este repositorio parte del esqueleto de `eclipse_de_luna_cpp`. Todo lo
+> que se describe sobre el pipeline C++17 es **base heredada**, no trabajo
+> terminado aquí. El dashboard web es el trabajo **pendiente** de este
+> repositorio; véase "Estado del proyecto".
 
 ## Base heredada: Proyecto Eclipse de Luna [C++] (MXN/EUR)
 
@@ -166,6 +168,11 @@ Resultado esperado: **119/119 casos aprobados** (472 aserciones).
 
 ## Estado del proyecto
 
+### Base heredada (`eclipse_de_luna_cpp`)
+
+El pipeline C++17 y sus reportes se incluyen solo como punto de partida y
+referencia. **No constituyen el trabajo de este repositorio.**
+
 - **1.604 líneas efectivas de producción** en `include/` y `src/`; 1.275 en
   `tests/` (3.013 líneas no vacías en total).
 - **119 casos de prueba** con 472 aserciones y 0 advertencias al compilar con
@@ -175,6 +182,14 @@ Resultado esperado: **119/119 casos aprobados** (472 aserciones).
 - Salidas reproducibles byte a byte con las semillas 42 (leads) y 7 (serie FX).
 - El repositorio no versiona `build/`, `bin/`, binarios, paquetes ni archivos
   temporales; esas exclusiones están en `.gitignore`.
+
+### Trabajo nuevo de este repositorio
+
+- **Dashboard web: pendiente.** Aún no hay frontend, backend, endpoints ni
+  integración con la base heredada.
+- No se han añadido dependencias, frameworks ni código de dashboard.
+- Alcance previsto: visualizar los resultados del pipeline heredado (calidad de
+  limpieza, comparación de modelos y pronóstico MXN/EUR).
 
 ## Parte 1: Limpieza de datos
 
